@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Graph3Activity"
+        android:background="@color/colorPrimary">
+
+    <TextView
+            android:text="@string/coinbase"
+            android:letterSpacing=".15"
+            android:textSize="14sp"
+            android:textColor="@color/colorSlateGrey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+            android:layout_marginStart="32dp" app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="@string/current_value"
+            android:textColor="@color/colorDodgerBlue"
+            android:textSize="35sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9" app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"/>
+    <TextView
+            android:text="@string/high"
+            android:textSize="12sp"
+            android:textColor="@color/colorSlateGrey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/textView8" android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text="@string/low"
+            android:textColor="@color/colorSlateGrey"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11" app:layout_constraintEnd_toEndOf="@+id/textView10"
+            android:layout_marginTop="2dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"/>
+    <TextView
+            android:text="@string/vol"
+            android:textColor="@color/colorSlateGrey"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12" android:layout_marginTop="2dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" app:layout_constraintEnd_toEndOf="@+id/textView10"/>
+    <TextView
+            android:text="@string/vol_value"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"/>
+    <ImageView
+            android:src="@drawable/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:textColor="@color/colorDodgerBlue"
+            android:id="@+id/textView14"
+            app:layout_constraintBottom_toBottomOf="@+id/textView13"
+            app:layout_constraintTop_toTopOf="@+id/textView8" android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/textView13"
+            app:layout_constraintStart_toEndOf="@+id/textView9" android:layout_marginStart="8dp"
+            android:contentDescription="@string/logo"/>
+    <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:weightSum="40" android:id="@+id/linearLayout3"
+            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/textView14"
+            android:baselineAligned="false">
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:gravity="center">
+            <Button
+                    android:text="@string/day"
+                    android:background="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="4dp"
+                    android:id="@+id/button_day"/>
+            <Button
+                    android:id="@+id/button_day_dot"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/round_button"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:gravity="center">
+            <Button
+                    android:text="@string/week"
+                    android:textColor="@color/colorSlateGrey"
+                    android:background="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="4dp"
+                    android:id="@+id/button_week"/>
+            <Button
+                    android:id="@+id/button_week_dot"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:enabled="false"
+                    android:background="@drawable/round_button"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:gravity="center">
+            <Button
+                    android:text="@string/month"
+                    android:textColor="@color/colorSlateGrey"
+                    android:background="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="4dp"
+                    android:id="@+id/button_month"/>
+            <Button
+                    android:id="@+id/button_month_dot"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:enabled="false"
+                    android:background="@drawable/round_button"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:gravity="center">
+            <Button
+                    android:text="@string/year"
+                    android:textColor="@color/colorSlateGrey"
+                    android:background="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="4dp"
+                    android:id="@+id/button_year"/>
+            <Button
+                    android:id="@+id/button_year_dot"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:enabled="false"
+                    android:background="@drawable/round_button"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.github.mikephil.charting.charts.CombinedChart
+            android:id="@+id/combined_chart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/toolbar2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+                android:layout_width="32dp"
+                android:contentDescription="@string/logo"
+                android:layout_height="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_gravity="start"
+                android:src="@drawable/ic_perm_contact_calendar_black_24dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/title"
+                android:textColor="@color/colorWhite"
+                android:letterSpacing="0.15"/>
+        <ImageView
+                android:layout_width="32dp"
+                android:contentDescription="@string/logo"
+                android:layout_height="32dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/ic_notifications_none_black_24dp"/>
+    </android.support.v7.widget.Toolbar>
+</android.support.constraint.ConstraintLayout>

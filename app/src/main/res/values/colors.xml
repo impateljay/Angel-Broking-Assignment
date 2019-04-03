@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#05020f</color>
+    <color name="colorPrimaryDark">#05020f</color>
+    <color name="colorAccent">#34a9ff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorSlateGrey">#5d5c71</color>
+    <color name="colorGreenBlue">#00bd9a</color>
+    <color name="colorDodgerBlue">#34a9ff</color>
+    <color name="colorCharcoalGrey">#353343</color>
+    <color name="colorDark">#1e1c2a</color>
+    <color name="colorGrapeFruit">#ff6960</color>
+    <color name="bgBottomNavigation">#fe485a</color>
+</resources>

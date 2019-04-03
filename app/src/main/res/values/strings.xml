@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Angel Broking</string>
+    <string name="coinbase">COINBASE</string>
+    <string name="current_value">$ 4,290.01</string>
+    <string name="high">High</string>
+    <string name="low">Low</string>
+    <string name="vol">Vol</string>
+    <string name="vol_value">30,333.22 B</string>
+    <string name="day">DAY</string>
+    <string name="week">WEEK</string>
+    <string name="month">MONTH</string>
+    <string name="year">YEAR</string>
+    <string name="logo">logo</string>
+    <string name="title">BITCOIN PRICE</string>
+</resources>
